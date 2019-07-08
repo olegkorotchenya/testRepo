@@ -1,0 +1,19 @@
+<html xmlns:th="https://www.thymeleaf.org">
+<body>
+
+<div>
+    <form method="POST" enctype="multipart/form-data" action="/api/docx/post">
+        <table>
+            <tr><td>File to upload:</td><td><input type="file" name="file" /></td></tr>
+            <tr><td></td><td><input type="submit" value="Upload" /></td></tr>
+        </table>
+    </form>
+
+    <a href="/api/docx/audit" target="_blank">Full audit</a>
+    <br/>
+    <a href="/api/docx/audit?fromDate=2019-07-08&toDate=2019-07-09" target="_blank">Audit fromDate=2019-07-08&toDate=2019-07-09</a>
+
+</div>
+
+</body>
+</html>
